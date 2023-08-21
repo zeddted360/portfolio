@@ -7,7 +7,7 @@ const router = require('./routes');
 const app = express();
 
 app.use(cors({
-    origin:'http://localhost:3000',
+    origin:'https://zeddporto.vercel.app',
     methods:'POST,GET',
     optionsSuccessStatus:200,
 }));
