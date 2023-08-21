@@ -23,7 +23,7 @@ const App = () => {
                 <Route  path='/about'Component={ About }/>
                 <Route  path='/contact'Component={ Contact }/>
                 <Route  path='/photos'Component={ Photos }/>
-                <Route  path='/resume/download' Component={ Resume }/>
+                <Route  path='/resume' Component={ Resume }/>
                 <Route  path='*'Component={ NoPage }/>
         </Routes>
             <Footer />
