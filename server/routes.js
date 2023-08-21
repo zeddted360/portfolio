@@ -5,7 +5,7 @@ const transporter = require('./sendEmail');
 
 const router = express.Router();
 
-router.get('https://zedd-ted-porto.vercel.app/',(req,res)=> {
+router.get('/',(req,res)=> {
   res.json("Hello welcome");
 });
 
