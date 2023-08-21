@@ -38,7 +38,7 @@ const handleFormSubmit = async (event) => {
 
         try{
 
-        const response = await fetch(`zedd-ted-porto.vercel.app/message`,{
+        const response = await fetch(`https://zedd-server.vercel.app/message`,{
             method:"POST",
             headers:{
                 "content-Type":"application/json",
