@@ -1,0 +1,124 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    background: var(--dark);
+    color: var(--light);
+    position: relative;
+    box-shadow: 1px 1px 1.5px ;
+}
+.active {
+    color: lightgreen;
+}
+.nick-name {
+    flex:1;
+}
+.header svg {
+    width: 2rem;
+    height: 2rem;
+}
+.nav-links {
+    flex: 4;
+}
+.nav-links ul.link-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100%;
+    gap: 20%;
+}
+
+.nav-links ul.link-list li,a {
+    list-style: none;
+    text-decoration: none;
+    font-size: 1.1rem;
+    color:var(--light);
+    display: block;
+    transition: .5s;
+    padding: 2px 4px;
+
+}
+.nav-links ul.link-list li:hover,.nav-links ul.link-list a:hover {
+    border-radius: .5rem;
+    background: var(--light);
+    color: var(--dark);
+}
+.svg{
+    flex: 1;
+    transition: .6s;
+}
+.svg:hover {
+    background: var(--light);
+    color: var(--dark);
+}
+.bar-links {
+    background: var(--light);
+    min-width: 50%;
+    min-height: 50vh;
+    padding: .5rem;
+    position: absolute;
+    box-shadow: 1px 1px 2px;
+    transition: 0.5s;
+    z-index: 2;
+    border-radius: 0 1rem 1rem 1rem;
+}
+.bar-links li,.bar-links a  {
+    color: var(--dark);
+    list-style: none;
+    margin: 1rem;
+    display: block;
+
+}
+.bar-links a{
+    width: 100%;
+    height: 100%;
+}
+.bar-links li:hover {
+    background: var(--dark);
+    color: var(--light);
+    border-radius: .2rem;
+}
+.cross {
+    color: var(--dark);
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 2px 4px;
+    border-radius: .5rem;
+    text-align: right;
+}
+.cross:hover {
+    background-color: var(--dark);
+    color: var(--light);
+}
+
+
+/* media queries */
+
+@media (max-width:576px) {
+    .nav-links {
+        display: none;
+    }
+    .svg {
+        flex: 0;
+    }
+}
+
+@media (min-width:576px) {
+    .nick-name {
+        display: none;
+    }
+    .svg {
+        display: none;
+    }
+    .nav-links {
+        flex:1;
+    }
+    .nav-links ul.link-list {
+        gap: 0;
+        justify-content: space-around;
+    }
+} 
+@media(min-width:768px){
+    .header{
+        min-height: 10vh;
+    }
+}

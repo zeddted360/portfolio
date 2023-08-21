@@ -1,0 +1,102 @@
+.contact {
+    background: var(--dark);
+    padding: 1rem;
+    color: var(--lighter);
+    height: 100vh;
+
+} 
+.contact h1 {
+    display: inline-block;
+    border-bottom: 2px solid var(--lighter);
+    margin-bottom: 1rem;
+}
+.contact .contacts svg {
+    width: 4rem;
+    height: 4rem;
+}
+
+.location, .phone, .mail {
+    margin: .5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: var(--light);
+
+}
+.location svg {
+    margin-right: .5rem;
+}
+.mail span,a {
+    display: inline-block;
+
+}
+a:hover {
+    background: var(--light);
+    color: #51555a;
+    border-radius: .5rem;
+}
+.form-container form {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 50%;
+}
+
+.form-container form input {
+    height: 2rem;
+    font-size: 1.1rem;
+    border: none;
+    outline: none;
+    text-indent: 5px;
+    border-radius: .5rem;
+    border-bottom: 2px solid var(--crim);
+}
+.form-container form input::placeholder {
+    color:var(--dark);
+}
+textarea {
+    text-indent: 5px;
+    outline: none;
+    height: 3rem;
+    outline: none;
+    border-radius: .5rem;
+    border-bottom: 2px solid var(--crim);
+    font-size: 1rem;
+}
+textarea::placeholder {
+    color: var(--dark);
+    font-size: 1.1rem;
+  
+}
+button {
+   font-size: 1.1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: lighter;
+    border-radius: .5rem;
+    border: none;
+    transition: .5s;
+
+}
+button img {
+    width: 2rem;
+    height: 2rem;
+
+}
+
+button:hover{
+    background: #51555a;
+    color: var(--light);
+} 
+@media (min-width:768px) {
+    .contact {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+   .contact h1 {
+    height: fit-content;
+    border-bottom: solid 2px var(--dark);
+    }
+};
