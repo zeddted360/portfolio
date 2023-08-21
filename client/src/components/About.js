@@ -69,7 +69,8 @@ const About = () => {
             <div className="my-reputation">
                 <h2 style={{
                     display:"inline-block",
-                    width:"fit-content"
+                    width:"fit-content",
+                    padding:".5rem"
             }}>My Reputation</h2>
                 <div className="p">
                     <div className="pwrite-up">
