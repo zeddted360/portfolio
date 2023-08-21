@@ -7,9 +7,9 @@ const router = require('./routes');
 const app = express();
 
 app.use(cors({
-    // origin:'https://zedd-sigma.vercel.app',
-    // methods:'POST,GET',
-    // optionsSuccessStatus:200,
+    origin:'https://zedd-sigma.vercel.app',
+    methods:'POST,GET',
+    optionsSuccessStatus:200,
 }));
 
 app.use(morgan('dev'));
