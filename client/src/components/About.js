@@ -83,7 +83,7 @@ const About = () => {
                         </div>
                 </div>
                 <div className="p">
-                <div className="pwrite-up">
+                <div  className="pwrite-up">
                 <img src={kanny} alt="provi imag"/>
                        <p>
                        Azubuike Nwibo, I have known him for more than three years,

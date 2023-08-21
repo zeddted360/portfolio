@@ -144,8 +144,8 @@
 .pwrite-up {
     display: flex;
     align-items: center;
-    /* gap: .5rem; */
     width: 100%;
+    padding: 1rem;
 }
 .pwrite-up img {
     float: left;
