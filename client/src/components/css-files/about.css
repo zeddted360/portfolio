@@ -7,6 +7,7 @@
     border-bottom: thin solid;
     display: inline-block;
     margin-bottom: 2rem;
+    color: var(--light);
 }
 .about h4 {
     color: darkgray;
@@ -136,26 +137,28 @@
     border-radius: 0 0 1rem 1rem;
     margin-bottom: 2rem;
 }
-.p img {
-    width: 8rem;
-    height: 8rem;
-    border-radius: 4rem;
-    background-position: right;
-}
 .p, .kanny {
     height: 50%;
     display: flex;
-position: relative;
-}
-.p p {
-    color: #a1aaa1;
-    font-weight:lighter ;
 }
 .pwrite-up {
     display: flex;
     align-items: center;
-    gap: .5rem;
-
+    /* gap: .5rem; */
+    width: 100%;
+}
+.pwrite-up img {
+    float: left;
+    margin: 0 10px 10px 0;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 4rem;
+}
+.pwrite-up p {
+    margin: 0;
+    float: left;
+    color: var(--light);
+    font-weight: 400;
 }
 .my-reputation {
     display: flex;
