@@ -9,7 +9,7 @@ router.get('/',(req,res)=> {
   res.json("Hello welcome");
 });
 
-router.post('https://zedd-ted-porto.vercel.app/message',async (req,res)=> {
+router.post('https://zedd-sigma.vercel.app//message',async (req,res)=> {
     const { name, email, subject, message } = req.body;
     try{
             const newMassage = await port_message.create({
@@ -40,11 +40,11 @@ router.post('https://zedd-ted-porto.vercel.app/message',async (req,res)=> {
     // Send email
     await transporter.sendMail(mailOptions);
     console.log('Email sent successfully');
-    res.status(200).end('Email sent successfully');
+    res.status(200).json('Email sent successfully');
   } 
   catch (err) {
     console.error('Error sending email:', err.message);
-    res.status(500).end('Error sending email');
+    res.status(500).send('Error sending email');
   }
 });
 module.exports = router;
