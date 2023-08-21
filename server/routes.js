@@ -5,6 +5,9 @@ const transporter = require('./sendEmail');
 
 const router = express.Router();
 
+router.get('/',(req,res)=> {
+  res.json("Hello welcome");
+})
 
 router.post('/message',async (req,res)=> {
     const { name, email, subject, message } = req.body;
