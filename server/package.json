@@ -8,5 +8,12 @@
     "mongoose": "^7.4.3",
     "morgan": "^1.10.0",
     "nodemailer": "^6.9.4"
+  },
+  "engines": {
+    "node": "14.x"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js start"
   }
 }
