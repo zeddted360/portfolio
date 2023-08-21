@@ -24,7 +24,7 @@ const App = () => {
                 <Route  path='/contact'Component={ Contact }/>
                 <Route  path='/photos'Component={ Photos }/>
                 <Route  path='/resume' Component={ Resume }/>
-                <Route  path='*'Component={ NoPage }/>
+                // <Route  path='*'Component={ NoPage }/>
         </Routes>
             <Footer />
         </div>
