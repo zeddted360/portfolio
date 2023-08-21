@@ -6,7 +6,7 @@ import Contact from './components/Contact';
 import About from './components/About';
 import Home from './components/Home';
 import NoPage from './components/NoPage';
-import Resume from './components/Resume'
+import Resume from './components/Resume';
 import Photos from './components/Photos';
 import { MyProvider, } from './context/myContext';
 
@@ -23,6 +23,7 @@ const App = () => {
                 <Route  path='/about'Component={ About }/>
                 <Route  path='/contact'Component={ Contact }/>
                 <Route  path='/photos'Component={ Photos }/>
+                <Route  path='/resume/download' Component={ Resume }/>
                 <Route  path='*'Component={ NoPage }/>
         </Routes>
             <Footer />
