@@ -7,7 +7,7 @@ const router = require('./routes');
 const app = express();
 
 app.use(cors({
-    origin:'https://zedd-ted-porto.vercel.app',
+    origin:'https://zedd-ted-porto.vercel.app/',
     methods:'POST,GET',
     optionsSuccessStatus:200,
 }));
