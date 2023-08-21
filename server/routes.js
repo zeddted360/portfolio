@@ -9,7 +9,7 @@ router.get('/',(req,res)=> {
   res.json("Hello welcome");
 });
 
-router.post('https://zedd-sigma.vercel.app//message',async (req,res)=> {
+router.post('https://zedd-sigma.vercel.app/message',async (req,res)=> {
     const { name, email, subject, message } = req.body;
     try{
             const newMassage = await port_message.create({
