@@ -4,7 +4,9 @@ import providence from '../public/prepute.jpg';
 import kanny from '../public/kanny.jpg';
 const About = () => {
     return ( 
-        <div className="about">
+        <div style={{
+            backgroundColor:"#21222a"
+        }} className="about">
             <div className="my-skills">
                 <h2>My Skills</h2>
                 <div className="Structural-design">
