@@ -40,11 +40,11 @@ router.post('/message',async (req,res)=> {
     // Send email
     await transporter.sendMail(mailOptions);
     console.log('Email sent successfully');
-    res.status(200).end('Email sent successfully');
+    res.status(200).send('Email sent successfully');
   } 
   catch (err) {
-    console.error('Error sending email:', err.message);
-    res.status(500).end('Error sending email');
+    console.error(`Error sending email: ${err.message}`);
+    res.status(500).send('Error sending email');
   }
 });
 module.exports = router;
