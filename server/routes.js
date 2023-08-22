@@ -19,18 +19,21 @@ router.post('/message',async (req,res)=> {
                 message,
             }); 
        
-    res.json({message:newMassage});
-    const mailOptions = {
-      from: 'nwiboazubuike@gmail.com',  
-      to: email,            
-      subject: 'Message from zedd',
-      text: 'Thanks for reaching zedd,\n you\'ll be replied shortly?',
-    };
-    
-      // Send email
-      await transporter.sendMail(mailOptions);
-      console.log('Email sent successfully');
+     const mailOptions = {
+    from: 'nwiboazubuike@gmail.com',  
+    to: email,            
+    subject: 'Message from zedd',
+    text: 'Thanks for reaching zedd,\n you\'ll be replied shortly?',
+  };
   
+  try {
+    // Send email
+    await transporter.sendMail(mailOptions);
+    console.log('Email sent successfully');
+  } 
+  catch (err) {
+    console.error(`Error sending email: ${err.message}`);
+  }
     }
     catch(err){
         console.log(err.message)
@@ -38,8 +41,8 @@ router.post('/message',async (req,res)=> {
 
     }
 
+    res.json({message:newMassage});
     
-  // Create email data
  
 });
 module.exports = router;
