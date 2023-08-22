@@ -27,16 +27,10 @@ router.post('/message',async (req,res)=> {
       text: 'Thanks for reaching zedd,\n you\'ll be replied shortly?',
     };
     
-    try {
       // Send email
       await transporter.sendMail(mailOptions);
       console.log('Email sent successfully');
-      // res.status(200).send('Email sent successfully');
-    } 
-    catch (err) {
-      console.error(`Error sending email: ${err.message}`);
-      // res.status(500).send('Error sending email');
-    }
+  
     }
     catch(err){
         console.log(err.message)
